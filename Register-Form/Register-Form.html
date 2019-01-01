@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register Form</title>
+  <style type="text/css">
+
+  body{
+    font-family: arial;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h6 {
+    border-bottom: 2px solid #b4b4b4;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin: 0px;
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+  }
+
+  .frm{
+  	background-color: #fff;
+  	width: 60%;
+  	margin: 0 auto;
+  	padding: 20px;
+    border-right: 2px solid #f1f1f1;
+    border-left: 2px solid #f1f1f1;
+
+  }
+
+  .frm form label {
+  	font-size: 16px;
+  	color: #333;
+  	font-family: arial;
+    font-weight: bold;
+  }
+
+  .frm form input[type=text],[type=password] {
+  	width: 100%;
+  	padding: 0px 10px;
+  	height: 50px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	color: #333;
+  	box-sizing:border-box;
+  	margin: 5px 0px 25px 0px;
+    background-color: #f1f1f1;
+  }
+
+  .frm form button{
+  	width: 100%;
+  	padding: 10px;
+  	height: 50px;
+  	font-size: 16px;
+  	background-color: green;
+  	border-radius: 5px;
+  	border:none;
+  	color: #fff;
+  	cursor: pointer;
+    box-sizing: border-box;
+  }
+
+
+  .frm form button:hover{
+  	background-color: darkgreen;
+  }
+
+  .sign{
+    background-color: #f1f1f1;
+    padding: 20px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 0px 0px 5px 5px;    
+    border-right: 2px solid #f1f1f1;
+    border-left: 2px solid #f1f1f1;
+  }
+
+
+  </style>
+</head>
+<body>
+
+<div class="frm">
+
+  <h1>Register</h1>
+  <h6>Please fill in this form to create an account.</h6>
+
+	<form>
+		<label for="Email">Email</label>
+		<input type="text" name="Email" placeholder="Enter Email">
+
+		<label for="Password">Password</label>
+		<input type="password" name="Password" placeholder="Enter Password">
+
+    <label for="Repeat Password">Password</label>
+    <input type="password" name="Repeat Password" placeholder="Repeat Password">
+
+		<button type="button">Register</button>
+	</form>
+
+  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+</div>
+ <p class="sign">Already have an account? <a href="#">Sign in</a></p>
+
+
+</body>
+</html>
