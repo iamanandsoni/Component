@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <style type="text/css">
+
+  .frm{
+  	background-color: #f1f1f1;
+  	width: 60%;
+  	margin: 0 auto;
+  	padding: 20px;
+  }
+
+  .frm form label {
+  	font-size: 16px;
+  	color: #333;
+  	font-family: arial;
+  }
+
+  .frm form input[type=text]{
+  	width: 100%;
+  	padding: 0px 10px;
+  	height: 50px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	color: #333;
+  	box-sizing:border-box;
+  	margin: 5px 0px 25px 0px;
+  }
+
+  .frm form select{
+  	width: 100%;
+  	padding: 0px 10px;
+  	height: 50px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	color: #333;
+  	box-sizing:border-box;
+  	margin: 5px 0px 25px 0px;
+  }
+
+  .frm form textarea{
+  	width: 100%;
+  	padding: 10px;
+  	height: 100px;
+  	font-size: 14px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	color: #999;
+  	box-sizing: border-box;
+  	margin: 5px 0px 25px 0px;
+  }
+
+
+  .frm form button{
+  	width: 20%;
+  	padding: 10px;
+  	height: 50px;
+  	font-size: 16px;
+  	background-color: green;
+  	border-radius: 5px;
+  	border:none;
+  	color: #fff;
+  	cursor: pointer;
+  }
+
+
+  .frm form button:hover{
+  	background-color: darkgreen;
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="frm">
+	<form>
+		<label>First Name</label>
+		<input type="text" name="First Name" placeholder="Your Name">
+
+		<label>Last Name</label>
+		<input type="text" name="Last Name" placeholder="Your Last Name">
+
+		<label>Country</label>
+		<select>
+			<option>Austria</option>
+			<option>India</option>
+			<option>US</option>
+		</select>
+
+		<label>Subject</label>
+		<textarea rows="5" placeholder="Write Somethings"></textarea>
+
+		<button type="submit">Submin</button>
+	</form>
+</div>
+
+
+</body>
+</html>
