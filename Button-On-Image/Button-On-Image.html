@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Button On Image</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	
+
+    .btn-bg {
+    position: relative;
+}
+
+  .btn-bg img{
+    width: 100%;
+    height: auto;
+}
+
+.btn-bg button {
+    background-color: grey; 
+    border: none;
+    color: white; 
+    padding: 20px 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    position: absolute; 
+    font-size: 20px;
+}
+
+.btn-bg button:hover {
+    background-color: black;
+}
+
+	</style>
+	
+</head>
+<body>
+<div class="btn-bg">
+  <img src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" alt="Birds">
+  <button>Button</button>
+</div>
+</body>
+</html>
