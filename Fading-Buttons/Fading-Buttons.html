@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fading Buttons</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+	.btn-group button {
+    background-color: grey;
+    border: none; 
+    color: white; 
+    padding: 20px 50px; 
+    cursor: pointer; 
+    float: left; 
+    margin-right: 50px;
+}
+
+.btn-group button:nth-child(1) {
+    background-color: red;
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+.btn-group button:nth-child(2) {
+    background-color: green;
+    transition: 0.3s;
+}
+
+.btn-group button:nth-child(3) {
+    background-color: blue;
+    transition: 0.3s;
+}
+
+.btn-group button:nth-child(1):hover {
+    background-color: black;
+    opacity: 1;
+}
+
+.btn-group button:nth-child(2):hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.btn-group button:nth-child(3):hover {
+    background-color: black;
+}
+	</style>
+	
+</head>
+<body>
+<div class="btn-group">
+  <button>Fade In</button>
+  <button>Fade Out</button>
+  <button>Fade BG</button>
+</div>
+</body>
+</html>
