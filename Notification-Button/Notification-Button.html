@@ -8,20 +8,28 @@
 	<style type="text/css">
 
   .notification {
-
-  }
-	.notification span:first-child {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
     background-color: #4CAF50; 
-    border: 1px solid green;
     color: white;
     padding: 10px 24px; 
-    text-decoration: none;
+    top: 20px;
+    left: 30px;
+  }
+
+	.notification:hover {
+    background-color: black;
 }
 
 .notification span:last-child {
-    padding: 10px 24px; 
+    padding: 10px 15px; 
     border-radius: 50%;
+    color: white;
     position: absolute;
+    background-color: green;
+    top: -20px;
+    right: -20px;
 }
 	</style>
 	
