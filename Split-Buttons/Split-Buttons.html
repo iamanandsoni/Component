@@ -5,50 +5,92 @@
 	<title>Split Button</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
-* {
-  box-sizing: border-box;
+  
+  body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
+  .main-button{
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
 
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
+  .main-button .left-button{
+    float: left;
+    outline: none;
+    border: none;
+    padding: 20px 40px;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+  }
 
-form.example button:hover {
-  background: #0b7dda;
-}
+  .dropdown{
+    position: relative;
+    float: left;
+  }
 
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .main-button .dropdown button{
+    outline: none;
+    border: none;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    border-left: 1px solid #333;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .main-button .dropdown button:hover{
+    background-color: darkblue;
+  }
+
+
+  .dropdown-body{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #b4b4b4;
+  }
+
+   .dropdown-body a{
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .dropdown-body a:hover{
+    background-color: #333;
+    color: white;
+  }
+
+  .main-button .dropdown:hover .dropdown-body{
+    display: block;
+  }
+
 	</style>
 	
 </head>
 <body>
-<form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+
+<div class="main-button">
+  <button class="left-button">Button</button>
+  <div class="dropdown">
+    <button><i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-body">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>
