@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Callout</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style type="text/css">
+
+	body{
+		margin: 0px;
+		padding: 0px;
+		font-family: arial;
+	}
+
+	.container{
+		height: 2000px;
+	}
+
+	.content{
+		padding: 25px 20px;
+		text-align: center;
+	}
+
+
+	.content h1{
+		font-weight: normal;
+		margin: 10px 0px 20px;
+		padding: 0px;
+		font-size: 30px;
+	}
+
+	.content p{
+		font-weight: normal;
+		margin: 0px;
+		padding: 0px;
+		line-height: 20px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.callout{
+		position: fixed;
+		bottom: 30px;
+		right: 20px;
+		width: 300px;
+		background: #ddd;
+	}
+
+	.callout-header{
+		padding: 30px 15px;
+		background: #333;
+	}
+
+	.callout-header h3{
+		padding: 0px;
+		margin: 0px;
+		font-size: 24px;
+		font-weight: normal;
+		color: #fff;
+	}
+
+	.callout span{
+		padding: 0px;
+		margin: 0px;
+		font-size: 24px;
+		right: 20px;
+		top: 20px;
+		position: absolute;
+		font-weight: normal;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.callout-content{
+		padding: 20px 15px;
+		font-size: 16px;
+		color: #333;
+	}
+
+	.callout-content p{
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: normal;
+	}
+
+
+	</style>
+	
+
+</head>
+<body>
+  
+  <div class="container">
+  	<div class="content">
+  		<h1>Callout Messages</h1>	
+  		<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  	</div>
+  	
+
+  	<div class="callout">
+  		<div class="callout-header">
+  			<h3>Callout Header</h3>
+  		</div>
+  		<span onclick="this.parentElement.style.display='none'";>X</span>
+  		<div class="callout-content">
+  			<p>Some text to describe the callout message. <a href="#">Learn more</a> or close it if it is in your way.</p>
+  		</div>
+  		
+  	</div>
+  </div>
+
+</body>
+</html>
