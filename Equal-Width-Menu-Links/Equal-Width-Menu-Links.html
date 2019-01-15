@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Centered Menu Link</title>
+	<title>Equal Width Menu Links</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,12 +14,12 @@ body{
 }
 
 .navbar{
-  background-color: #333;
+  background-color: #666;
   font-family: arial;
   font-size: 16px;
   overflow: hidden;
   margin: 0px;
-  position: relative;
+  padding: 0px;
 }
 
 .navbar a{
@@ -27,33 +27,16 @@ body{
   float: left;
   text-decoration: none;
   text-align: center;
-  padding: 20px;
+  padding: 15px 0px;
   margin: 0px;
+  width: 25%;
 }
 
-.navbar a:hover, .right-side a:hover{
+.navbar a:hover{
   background-color: red;
   color: white;
 }
 
-.center-side{
-  padding: 0px;
-  color: #fff;
-  margin: 0 auto;
-  float: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.right-side{
-  float: right;
-  overflow: hidden;
-  padding: 0px;
-  color: #fff;
-  margin: 0px;
-}
 
 </style>
 	
@@ -62,17 +45,10 @@ body{
 
 <div class="navbar">
 
-    <a href="#">News</a>
+    <a href="#">Home</a>
+    <a href="#">Search</a>
     <a href="#">Contact</a>
-
-    <div class="center-side">
-        <a href="#">Home</a>
-    </div>
-
-    <div class="right-side">
-        <a href="#">Search</a>
-        <a href="#">About</a>
-    </div>
+    <a href="#">Login</a>
 
 </div>
 
