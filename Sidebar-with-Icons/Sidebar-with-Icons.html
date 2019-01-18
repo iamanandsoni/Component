@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sidebar with Icons</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  * {
+  box-sizing: border-box;
+  }
+
+  .sidebar {
+    width: 30%;
+    padding: 5px;
+    height: 100%;
+    background-color:#666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  .sidebar .nav {
+    top: 20%;
+    left: 20%;
+    position: absolute;
+  }
+
+  .sidebar .nav a{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    font-family: arial;
+  }
+
+  .sidebar .nav a:hover{
+    color: #000;
+  }
+
+  .content {
+    float: right;
+    width: 70%;
+    padding: 25px;
+    height: 2000px;
+    background-color:#ff0;
+  }
+
+
+</style>
+	
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="nav">
+    <a href="#"><i class="fa fa-home"> Home</i></a>
+    <a href="#"><i class="fa fa-wrench"> Services</i></a>
+    <a href="#"><i class="fa fa-user"> Clients</i></a>
+    <a href="#"><i class="fa fa-envelope"> Contact</i></a>
+  </div>
+</div>
+
+<div class="content">
+    <h1>Sidebar with Icons</h1>
+    <p>This side navigation is of full height (100%) and always shown.</p>
+
+    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+</body>
+</html>
