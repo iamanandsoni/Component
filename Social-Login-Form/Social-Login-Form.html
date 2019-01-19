@@ -29,6 +29,12 @@
     border-radius: 5px;
   }
 
+  .content:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
   .column{
     float: left;
     width: 50%;
@@ -41,29 +47,23 @@
     left: 50%;
     transform: translate(-50%);
     border: 2px solid #ddd;
-    height: 175px;
+    height: 190px;
   }
 
   .middle p{
     position: absolute;
     top: 40%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    color: #666;
-    border-radius: 50px;
-    border: 1px solid #ddd;
     background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
   }
 
   .column button{
-    border: 0px;
-    outline: 0px;
     border-radius: 5px;
     padding: 15px 20px;
     width: 100%;
-    margin: 0px 0px 17px 0px;
-    top: 0px;
     height: 50px;
     text-align: left;
     color: #fff;
@@ -71,6 +71,9 @@
     font-family: arial;
     opacity: 0.8;
     cursor: pointer;
+    margin: 0px 0px 20px 0px;
+    outline: none;
+    border: none;
   }
 
   .column .facebook{
@@ -121,7 +124,7 @@
   	font-size: 14px;
   	color: #333;
   	box-sizing:border-box;
-  	margin: 5px 0px 15px 0px;
+  	margin: 0px 0px 20px 0px;
   }
 
   .frm form button{
@@ -141,10 +144,14 @@
   	background-color: darkgreen;
   }
 
+   .hide-md-lg {
+    display: none;
+  }
+
   .bottom-container {
     text-align: center;
     background-color: #666;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 5px 5px;
     height: 60px;
   }
 
@@ -152,6 +159,7 @@
     padding: 10px;
     text-decoration: none;
     color: #fff;
+    line-height: 60px;
   }
 
   .bottom-container a:hover{
@@ -159,13 +167,44 @@
     text-decoration: underline;
   }
 
+/* Responsive CSS */
+
+  @media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .middle {
+    display: none;
+  }
+
+  .box{
+    width: 100%;
+  }
+
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+
+  .bottom-container {
+    height: 100px;
+}
+
+  .bottom-container a {
+    line-height: 50px;
+}
+}
+
   </style>
 </head>
 <body>
 
 <div class="box">
     <div class="content">
-      <h2>Login with Social Media or Manually</h2>
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
 
         <div class="column">
           <button class="facebook"><i class="fa fa-facebook"> &nbsp; Login with Facebook</i></button>
@@ -176,6 +215,7 @@
         <div class="middle">
           <p>or</p>
         </div>
+        <div class="hide-md-lg"><p>Or sign in manually:</p></div>
         
         <div class="column">
         <div class="frm">
