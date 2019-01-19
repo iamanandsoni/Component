@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mega Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,html{
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar{
+  background-color: #333;
+  font-family: arial;
+  font-size: 16px;
+  overflow: hidden;
+}
+.navbar a{
+  color: #fff;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 0px;
+}
+.navbar a:hover, .dropdown:hover{
+  background-color: red;
+  color: white;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  text-align: center;
+  margin:12px 0px 0px 0px;
+  width: 100%;
+  left: 0px;
+}
+.dropdown-content h2{
+  display: block;
+  text-align: left;
+  padding: 25px 20px;
+  color: #fff;
+  background-color: red;
+  margin: 0px;
+  }
+
+  .dropdown-content a{
+  display: block;
+  text-align: left;
+  padding: 15px 43px;
+  color: #333;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column{
+  background-color: #f1f1f1;
+  margin: 12px;
+  width: 29%;
+  padding: 10px;
+  float: left;
+  height: 250px;
+}
+
+.column h3{
+  color: #000;
+  text-align: left;
+  margin:0px;
+  padding: 15px 0px;
+}
+
+.column a{
+  display: block;
+  text-align: left;
+  padding: 15px 20px;
+  color: #333;
+  float: none;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 825px) and (max-width: 1024px){
+.column{
+  background-color: #f1f1f1;
+  margin: 12px;
+  width: 28%;
+  padding: 10px;
+  float: left;
+  height: 250px;
+}
+}
+
+@media screen and (min-width: 531px) and (max-width: 824px){
+.column{
+  background-color: #f1f1f1;
+  margin: 12px;
+  width: 20%;
+  padding: 10px;
+  float: left;
+  height: 250px;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 530px){
+.column{
+  background-color: #f1f1f1;
+  margin: 12px;
+  width: 80%;
+  padding: 10px;
+  height: 250px;
+}
+}
+
+
+</style>
+	
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <div href="#" class="dropdown">Dropdown <i class="fa fa-caret-down"></i>
+    <div class="dropdown-content">
+      <h2>Mega Menu</h2>
+      <div class="row">
+          <div class="column">
+              <h3>Category 1</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+              <h3>Category 2</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+              <h3>Category 3</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
+<p>Hover over the "Dropdown" link to see the mega menu.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+
+</body>
+</html>
