@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Social Login Form</title>
+  <style type="text/css">
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  * {box-sizing: border-box}
+
+  .box{
+    border: 5px solid #eee;
+    width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+  }
+
+  .content{
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .column{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+    margin: 0px;
+  }
+
+  .middle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+
+  .middle p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: #666;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+  }
+
+  .column button{
+    border: 0px;
+    outline: 0px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 100%;
+    margin: 0px 0px 17px 0px;
+    top: 0px;
+    height: 50px;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    font-family: arial;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .column .facebook{
+    background-color: #3B5998;
+  }
+
+   .column .facebook:hover{
+    background-color: #3B5998;
+    opacity: 1;
+  }
+
+    .column .twitter{
+    background-color: #55ACEE;
+  }
+
+   .column .twitter:hover{
+    background-color: #55ACEE;
+    opacity: 1;
+  }
+
+    .column .google-plus{
+    background-color: #dd4b39;
+  }
+
+   .column .google-plus:hover{
+    background-color: #dd4b39;
+    opacity: 1;
+  }
+
+  .frm{
+  	width: 100%;
+  	margin: 0;
+  	padding: 0px;
+  }
+
+  .frm form label {
+  	font-size: 16px;
+  	color: #333;
+  	font-family: arial;
+  }
+
+  .frm form input[type=text],[type=password]{
+  	width: 100%;
+  	padding: 0px 10px;
+  	height: 50px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	color: #333;
+  	box-sizing:border-box;
+  	margin: 5px 0px 15px 0px;
+  }
+
+  .frm form button{
+  	width: 100%;
+  	padding: 10px;
+  	height: 50px;
+  	font-size: 16px;
+  	background-color: green;
+  	border-radius: 5px;
+  	border:none;
+  	color: #fff;
+  	cursor: pointer;
+    text-align: center;
+  }
+
+  .frm form button:hover{
+  	background-color: darkgreen;
+  }
+
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+    height: 60px;
+  }
+
+  .bottom-container a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .bottom-container a:hover{
+    color: #111;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="content">
+      <h2>Login with Social Media or Manually</h2>
+
+        <div class="column">
+          <button class="facebook"><i class="fa fa-facebook"> &nbsp; Login with Facebook</i></button>
+          <button class="twitter"><i class="fa fa-twitter"> &nbsp; Login with Twitter</i></button>
+          <button class="google-plus"><i class="fa fa-google-plus"> &nbsp; Login with Google+</i></button>
+        </div>
+
+        <div class="middle">
+          <p>or</p>
+        </div>
+        
+        <div class="column">
+        <div class="frm">
+        	<form>
+        		<input type="text" name="Username" placeholder="Username">
+
+        		<input type="password" name="Username" placeholder="Password">
+
+        		<button type="submit">Login</button>
+        	</form>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-container">
+      <div class="row">
+        <div class="column">
+          <a href="#">Sign up</a>
+        </div>
+        <div class="column">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>
