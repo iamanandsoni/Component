@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Clear Input Field</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text] {
+  width: 300px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid dodgerblue;
+}
+
+
+</style>
+	</style>
+	
+</head>
+<body>
+
+    
+    <input type="text" value="Anand Soni" onfocus="this.value=''">
+  
+
+<!-- Button click way to do clear value of input field -->
+<br>
+  
+    <input type="text" value="Anand Soni" id="clear">
+    <button onclick="document.getElementById('clear').value = ''">Clear The Value</button>
+
+
+
+</body>
+</html>
