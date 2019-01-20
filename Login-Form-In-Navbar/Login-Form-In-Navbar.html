@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form In Navbar</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px;
+  max-width: 100%;
+  padding: 0px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.nav{
+  width: 60%;
+  float: left;
+}
+
+.nav a{
+  padding: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #333;
+  margin-left: -4px;
+}
+
+.nav a:hover{
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.active{
+  color: #ffffff !important;
+  background-color: dodgerblue;
+}
+
+.container-form{
+  float: right;
+  width: 40%;
+  margin-top: 5px;
+}
+
+input[type=text],input[type=password] {
+  width: 39%;
+  padding: 13px;
+  margin: 0px;
+  border: 1px solid #ddd;
+  background: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type=text]:focus {
+  background-color: #f9f9f9;
+  outline: none;
+  border-color: dodgerblue;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 18%;
+  opacity: 0.9;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 816px) and (max-width: 1116px){
+
+.nav{
+  width: 50%;
+  float: left;
+}
+
+.container-form{
+  float: right;
+  width: 50%;
+  margin-top: 5px;
+}
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 815px){
+
+.nav{
+  width: 100%;
+  float: left;
+}
+
+.container-form{
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+}
+
+
+</style>
+	</style>
+	
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>  
+
+  <div class="container-form">
+    <form>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
