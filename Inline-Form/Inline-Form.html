@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Inline Form</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px;
+  max-width: 100%;
+  padding: 0px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.active{
+  color: #ffffff !important;
+  background-color: dodgerblue;
+}
+
+.container-form{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+input[type=text],input[type=password] {
+  width: 300px;
+  padding: 13px;
+  margin: 0px 15px 0px 0px;
+  border: 1px solid #ddd;
+  background: #fff;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+  background-color: #f9f9f9;
+  outline: none;
+  border-color: dodgerblue;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  opacity: 0.9;
+  font-size: 18px;
+  margin: 0px 0px 0px 10px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+</style>
+	</style>
+	
+</head>
+<body>
+
+<div class="container">
+
+  <div class="container-form">
+    <form>
+      <label>Email:</label>
+      <input type="text" placeholder="Enter Email">
+      <label>Password:</label>
+      <input type="password" placeholder="Enter Password">
+      <input type="checkbox" name="Remember">Remember me
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
