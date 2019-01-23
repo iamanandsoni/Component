@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Overlay Slide</title>
+	
+
+	<!-- Load an icon library -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+* {box-sizing: border-box}
+
+/**********  From Top To Bottom  **********/
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  background-color: dodgerblue;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  height: 0%;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  top: 0px;
+}
+
+
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+
+/**********  From Bottom To Top  **********/
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  background-color: dodgerblue;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  height: 0%;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  top: 0px;
+}
+
+
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+
+
+/**********  From Left To Right  **********/
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  background-color: dodgerblue;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  height: 0%;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  top: 0px;
+}
+
+
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+
+
+/**********  From Right To Left  **********/
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  background-color: dodgerblue;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  height: 0%;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  top: 0px;
+}
+
+
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+
+	</style>
+	
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">Anand Soni</div>
+    </div>
+  </div>
+
+  <div class="container2">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">Anand Soni</div>
+    </div>
+  </div>
+
+  <div class="container3">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">Anand Soni</div>
+    </div>
+  </div>
+
+  <div class="container4">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">Anand Soni</div>
+    </div>
+  </div>
+  
+</body>
+</html>
