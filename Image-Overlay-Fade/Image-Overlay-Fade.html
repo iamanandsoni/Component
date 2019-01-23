@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Overlay Fade</title>
+	
+
+	<!-- Load an icon library -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 25%;
+  max-width: 300px;
+}
+
+.container2 {
+  position: relative;
+  width: 25%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  background-color: dodgerblue;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  top: 0px;
+}
+
+.overlay2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.text2 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container2:hover .overlay2 {
+  opacity: 1;
+}
+
+.container2:hover .image2 {
+  opacity: 0.3;
+}
+	</style>
+	
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">Anand Soni</div>
+    </div>
+  </div>
+  <br>
+  <!-- Another Way to do that -->
+  <br>
+  <div class="container2">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/72/af/2172af9d-fb3c-340a-85c4-e1572495348d/BLACKPINK_DIGITAL_SINGLE_IMAGE.jpg/600x600bf.png" alt="Avatar" class="image2">
+    <div class="overlay2">
+        <div class="text2">Anand Soni</div>
+    </div>
+  </div>
+
+</body>
+</html>
