@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Header</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style type="text/css">
+
+	body{
+		margin: 0px;
+		padding: 0px;
+		font-family: arial;
+	}
+
+	.header{
+		background-color: #f1f1f1;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+
+	.logo{
+		float: left;
+		padding: 20px;
+	}
+
+	.logo h3{
+		font-size: 24px;
+		color: #333;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.nav{
+		padding: 25px;
+		float: right;
+	}
+
+	.nav a{
+		font-size: 18px;
+		text-decoration: none;
+		color: #333;
+		padding: 15px;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	.nav a:hover{
+		background-color: dodgerblue;
+		color: #fff !important;
+	}
+
+	.active{
+		background-color: dodgerblue;
+		color: #fff !important;
+	}
+
+	@media screen and ( max-width: 525px){
+
+	.nav{
+		float: left;
+    	padding: 20px;
+    	width: 80%;
+	}
+
+	.nav a{
+		width: 100%;
+		display: inline-block;
+		text-align: left;
+		margin: 0px 0px 10px 0px;
+	}
+
+	}
+
+
+	</style>
+
+</head>
+<body>
+
+  	<div class="header">
+		<div class="logo">
+			<h3>Company Logo</h3>
+		</div>  		
+
+		<div class="nav">
+			<a href="#" class="active">Home</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		</div>
+  	</div>
+
+</body>
+</html>	
