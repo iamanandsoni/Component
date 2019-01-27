@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Arrows</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <style type="text/css">
+
+body, html {
+  margin:0px;
+  padding: 0px;
+  height:1500px;
+  font-family: arial;
+  background-color: #eee;
+}
+
+*{
+  box-sizing: border-box;
+  }
+
+.container{
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  max-width: 1000px;
+}
+
+i{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.container i.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.container i.left{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.container i.up{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.container i.bottom{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+	</style>
+	
+</head>
+<body>
+
+  <div class="container">
+      <p>Rotate Right: <i class="right"></i></p>
+      <p>Rotate Left: <i class="left"></i></p>
+      <p>Rotate Up: <i class="up"></i></p>
+      <p>Rotate Bottom: <i class="bottom"></i></p>
+
+  </div>
+
+</body>
+</html>
