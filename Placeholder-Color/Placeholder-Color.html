@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Placeholder Color</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+  body,html {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  input{
+    width: 500px;
+    height: 40px;
+    border: 2px solid #ddd;
+    padding: 5px 10px; 
+    text-transform: uppercase;
+    margin: 50px;
+    border-radius: 5px;
+  }
+
+
+::placeholder{ 
+  color: red;
+  opacity: 1;
+}
+
+:-ms-input-placeholder{ 
+  color: red;
+}
+
+::-ms-input-placeholder{
+  color: red;
+}
+
+
+
+	</style>
+	
+</head>
+<body>
+
+  <input type="text" placeholder="type something">
+  
+
+</body>
+</html>
