@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Transition On Hover</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		
+  body, html{
+    margin: 0px;
+    padding: 0px;
+  }
+
+.container {
+    background-color: #ff0;
+    height: 500px;
+}
+
+.container .fade-in{
+  width: 200px;
+  border: 0px;
+  outline: 0px;
+  font-size: 16px;
+  font-family: arial;
+  padding: 15px 10px;
+  background-color: red;
+  color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .fade-in:hover{
+  opacity: 1;
+}
+
+.container .fade-bg{
+  width: 200px;
+  border: 0px;
+  outline: 0px;
+  font-size: 16px;
+  font-family: arial;
+  padding: 15px 10px;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .fade-bg:hover{
+  background-color: green;
+}
+
+	</style>
+	
+</head>
+<body>
+  <div class="container">
+    <button class="fade-in">Fade In</button>
+    <button class="fade-bg">Fade In</button>
+  </div>
+</body>
+</html>
