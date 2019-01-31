@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Split Screen</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+  .container{
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    position: relative;
+    height: 100%;
+  }
+
+  .left{
+    left: 0%;
+    background-color: black;
+    position: absolute;
+  }
+
+  .right{
+    right: 0%;
+    background-color: red;
+    position: absolute;
+  }
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .content img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .content h2, p{
+    color: #fff;
+    text-align: center;
+  }
+
+	</style>
+	
+</head>
+<body>
+
+<div class="container left">
+  <div class="content">
+      <img src="https://cdn3.iconfinder.com/data/icons/women-avatars/314/29-01-512.png" alt="girl">
+      <h2>Jane Flex</h2>
+      <p>Some text.</p>
+  </div>
+</div>
+
+<div class="container right">
+  <div class="content">
+      <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Bearded_Man-17-512.png" alt="girl">
+      <h2>Jane Flex</h2>
+      <p>Some text.</p>
+  </div>
+</div>
+
+
+</body>
+</html>
