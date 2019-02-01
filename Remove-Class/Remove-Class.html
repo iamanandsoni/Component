@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Remove Class</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	
+body, html{
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+.addclass {
+  border: 0px;
+  outline: 0px;
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.addclass:hover {
+  background-color: dodgerblue;
+}
+
+.showcontent{
+  padding: 10px 20px;
+  font-size: 25px;
+  color: #fff;
+  background-color: coral; 
+}
+
+	</style>
+	
+</head>
+<body>
+
+    <button class="addclass" onclick="abc()">Remove Class</button>
+    
+
+    <div id="show" class="showcontent">
+      <p>Click the button to remove a class to me!</p>
+    </div>
+
+<script type="text/javascript">
+  
+function abc() {
+  var element = document.getElementById("show");
+  element.classList.remove("showcontent");
+}
+
+</script>
+
+</body>
+</html>
