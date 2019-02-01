@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Browser Window</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    padding: 20px;
+    font-family: arial;
+  }
+
+  .container{
+    border: 3px solid #ddd;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .topbar{
+    padding: 5px;
+    margin: 0px;
+    background-color: #ddd;
+    overflow: hidden;
+   }
+
+   .column{
+    float: left;
+   }
+
+   .column::after{
+    float: none;
+   }
+
+   .left{
+    padding: 10px;
+    margin: 0px;
+    width: 25%;
+   }
+
+   .left .red{
+    width: 12px;
+    height: 12px;
+    background-color: #ED594A;
+    border-radius: 50%;
+    display: inline-block;
+   }
+
+   .left .yellow{
+    width: 12px;
+    height: 12px;
+    background-color: #FDD800;
+    border-radius: 50%;
+    display: inline-block;
+   }
+
+   .left .green{
+    width: 12px;
+    height: 12px;
+    background-color: #5AC05A;
+    border-radius: 50%;
+    display: inline-block;
+   }
+
+   .left .grey{
+    width: 12px;
+    height: 12px;
+    background-color: #aaa;
+    border-radius: 50%;
+    display: inline-block;
+   }
+
+   .middle{
+    width: 50%;
+    margin: 0 auto;
+   }
+
+    .middle input{
+    width: 100%;
+    padding: 10px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+   }
+
+   .right{
+    margin: 0px;
+    padding: 10px;
+    float: right;
+   }
+
+   .right i{
+    color: #666;
+   }
+
+   .container-body{
+    padding: 10px;
+   }
+
+	</style>
+	
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="column left">
+              <span class="red"> </span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <div class="column middle">
+                <input type="text" name="search" placeholder="http://www.google.com">
+            </div>
+            <div class="column right">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="container-body">
+            <h1>Browser Window</h1>
+            <p>Lorem ipsum..</p>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="container">
+        <div class="topbar">
+            <div class="column left">
+              <span class="grey"></span>
+              <span class="grey"></span>
+              <span class="grey"></span>
+            </div>
+        </div>
+
+        <div class="container-body">
+            <h1>Browser Window</h1>
+            <p>Lorem ipsum..</p>
+        </div>
+    </div>
+</body>
+</html>
