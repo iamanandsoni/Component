@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contact Chips</title>
+  <style type="text/css">
+
+  .container{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+  }
+
+  .chip{
+  	background-color: #f1f1f1;
+  	padding: 0px 20px 0px 0px;
+    border-radius: 50px;
+    display: inline-block;
+    height: 50px;
+    font-family: arial;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-right: 20px;
+  }
+
+  .chip img {
+  	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .close{
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+	<div class="chip">
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="male">
+    John Doe
+  </div>
+
+
+  <div class="chip">
+    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="female">
+    Jane Row
+    <span class="close" onclick="this.parentElement.style.display='none'">X</span>
+  </div>
+</div>
+
+
+</body>
+</html>
