@@ -3,20 +3,29 @@
 <head>
 	<title>Image Overlay Icon</title>
 	
-	<!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
-/* Container needed to position the overlay. Adjust the width as needed */
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  *{
+    box-sizing: border-box ;
+  }
+
 .container {
   position: relative;
-  width: 25%;
+  width: 100%;
   max-width: 400px;
 }
 
-/* Make the image to responsive */
 .image {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
@@ -58,11 +67,9 @@
 	
 </head>
 <body>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="container">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAYFBMVEU7hrD///+Ercgzg65mocI2hK8wga0+iLJknL7N4Osrf6ynx9q40+JKjrW+1eNEjbXV5e6Pts/t9PixzN34+vx2qcfh6/KhwdValrro8faYvNLz+Poee6l5qMbU5O1Okrj5Hfw7AAAFLUlEQVR4nO3d65aiOhCAUUKohHtAUWmx9f3f8kDr8dIq2JIKFlNfr/k1PQv2gFwCgidmnjf1DGDHQOrdAqOk9IlXJtFTYBpmGqRUlx8luz9Pfp7+xZT/ToLOwvQhsAgVeOCRr0WosLgH5kZNPWv2Uib/Dcz1DBbeJdD5LbAws/K1QlPcAMMZrZ/HVHgNTGfna4XpFTCc2QraBeEFGGVTzw1GWXQGJvPahB4DnZyB5Qx9rbA8A3059cxgJP0LcIYb0XYz6v9DS5CBFGMg9RhIPQZSj4HUYyD1GEg9BlKPgdRjIPUYSD0GUo+B1GMg9RhIPQZSj4HUYyD1GEg9BlKPgdRjIPUYSD0GUo+B1GMg9RhIPQZSj4HWA6m6pKOvgrkGKqhXvr8pfT8wysUE3QLjQxkVX00jmmaxjparGH+SLoEqS9aNuGoRBejfeHMIVKu1uCvVyFN1Bjx91/SudYgrdAUEvXzoE6JZoa6mjoBgnvnaTyKq0A0QvMfrp4O11A1Qlk0PUOQGbcpugFBHfT5RbfFWUjdLcNPr61ZStAM3F0CoH+wAb9vQBvpDPhEdkKbtZhVN+3VtVYC1CF0A9dcgEO9BGk6Awz6xRJq2CyAELwDRHpflAChXLwDXDHx36gwcP4lXgHvCQKhfAOY403azmzAvALeE94Og+88lfvomDPRg6GRCiC+00wknwKAaAi7RHhvp5GA7y/t5YuGTPl1qz5cW/UDEMQs3Z/S6fxF+rRCHg9yMqh32Pb5qE6NN2dW46MNh+/MKijni7Gpku0eYdxsYuhsZUHGcGQXPhFV7JgiQebHCGTpEBipVb/bFuth2j71+dEDTbA3IMF+vi7Q0GB9FVGC72IrTPj46xNLcj29HIajd9vg71WKp7RMxgXC43jskWipVLi4HNVWVBzvl3Qya2h97QgT+/tTtvzOpdsG2XR/b9kvfxLFX/zpO3Wq7M4EIhPD34UuV+3W7LYl3+nBoNz0q1sHmbsuzsSxEAz684NLs81Xd2tqU7pbl/a9Uls8M8Zbgk3OkxbrIkyRZttvWx+cYX4HV+cACyqD3imBfidW9PhIQ9PD1iGdV31b/p5GA4du+7tYSi4sQCaie33MwXFMTAL79CewqLR6W4gBfut7yvL3FIzYcoOq7a+SFlL11FAe4G7wo35/FXSEO0AyOE/aX2FtHUYByeCC0v2Jna1ZwgGo7zicqe5tRHOD7hzEnoL27SlCAcdE//8NAewOlOJ/BkRtRUdl7uQcK8DAWKDZzBy4/Ggj1C7c2UQbK1cDFJAbOH1hYO1b7UGD+0UAIZr6R8czo3UTy2UA1+kjmww/VRg05/QDt3ZSAAhw1aNiVfvgJrxcP3RgzkMULMEjDhmbUsKG9Q228cdHViD1FbvMKGtbFF+i7b6S3Kj0QuPjiAYTvjVsUfmb1AiHiFV4dbv68nua+1cXnId+EIKVXB38oQ3h8APJ9MvCn7E+fn2VBPwZSj4HUYyD1GEg9BlKPgdRjIPUYSD0GUo+B1GMg9RhIPQZSj4HUYyD1GEg9BlKPgdRjIPUYSD0GUo+B1GMg9RhIPQZSj4HUYyD1/iUg2ntlJg3KMzDBeuXDlJ1ee/gDjLKp5wajLDoDBd4LyKbr9H3pIzBFf+Oo+06PlzoCRTg7oTp94f0E3KO99WGiwBQ3QLz3V00TnN+S8D9Q5GZGa6ky5+cVnIGiCBXgPVnfXdA9e/7yeLcLsN2WhpkGSTzQ2c3X3K+B7R4/KX3ilcntU75vgTOMgdSbPfA/jAlNplM4TkwAAAAASUVORK5CYII=" alt="Avatar" class="image">
+  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="image">
   <div class="overlay">
     <a href="#" class="icon" title="User Profile">
       <i class="fa fa-user"></i> 
