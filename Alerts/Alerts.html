@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Alerts</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  .container {
+    margin: 0px;
+    padding: 0px;
+} 
+
+  .success{
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+   .info{
+    background-color: #2196F3;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+   .warning{
+    background-color: #ff9800;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+   .danger{
+    background-color: #f44336;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .close{
+    float: right;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+
+  .close:hover{
+    color: #333;
+  }
+
+
+	</style>
+	
+</head>
+<body>
+<div class="container">
+  <div class="success">Success! Indicates a successful or positive action. <span class="close" onclick="this.parentElement.style='display:none'">x</span></div>
+  <div class="info">Info! Indicates a neutral informative change or action. <span class="close" onclick="this.parentElement.style='display:none'">x</span></div>
+  <div class="warning">Warning! Indicates a warning that might need attention. <span class="close" onclick="this.parentElement.style='display:none'">x</span></div>
+  <div class="danger">Danger! Indicates a dangerous or potentially negative action. <span class="close" onclick="this.parentElement.style='display:none'">x</span></div>
+</div>
+</body>
+</html>
