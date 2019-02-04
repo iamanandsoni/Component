@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Responsive Sidebar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  * {
+  box-sizing: border-box;
+  }
+
+  .sidebar {
+    width: 25%;
+    padding: 0px;
+    height: 100%;
+    background-color:#f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  .sidebar .nav a{
+    color: #333;
+    padding: 15px 20px;
+    display: block;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: none;
+  }
+
+  .sidebar .nav a:hover{
+    background-color: dodgerblue;
+    color: #fff;
+  }
+
+  .active{
+    background-color: dodgerblue;
+    color: #fff !important;
+  }
+
+  .content {
+    float: right;
+    width: 75%;
+    padding: 25px;
+    height: 2000px;
+    background-color:#fff;
+  }
+
+  @media screen and ( min-width: 371px ) and ( max-width: 550px ) {
+
+    .sidebar{
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+
+    .sidebar .nav a{
+      font-size: 16px;
+      color: #333;
+      padding: 15px 20px;
+      display: inline-block;
+      font-family: arial;
+      text-decoration: none;
+  }
+
+    .content{
+      width: 100%;
+      float: none;
+      margin-top: 25px;
+    }
+  }
+
+   @media screen and ( max-width: 370px ) {
+
+    .sidebar{
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+
+    .sidebar .nav a{
+      font-size: 16px;
+      color: #333;
+      padding: 15px 20px;
+      display: block;
+      font-family: arial;
+      text-decoration: none;
+  }
+
+    .content{
+      width: 100%;
+      float: none;
+      margin-top: 160px;
+    }
+  }
+
+
+</style>
+	
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+  </div>
+</div>
+
+<div class="content">
+    <h1>Responsive Sidebar Example</h1>
+    <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+
+    <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+
+    <p><b>Resize the browser window to see the effect.</b></p>
+</div>
+
+</body>
+</html>
