@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Form</title>
+  <style type="text/css">
+
+  body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .frm{
+  	background-color: #f1f1f1;
+  	margin: 0 auto;
+  	padding: 30px;
+    overflow: hidden;
+  }
+
+  .row{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-25{
+    width: 25%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+  }
+
+  .col-75{
+    width: 75%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+  }
+
+  .frm form label {
+  	font-size: 16px;
+  	color: #333;
+  	font-family: arial;
+    display: inline-block;
+    padding: 20px 12px 12px 0;
+    font-weight: bold;
+  }
+
+  .frm form input[type=text], select, textarea{
+  	width: 100%;
+  	padding: 15px 10px;
+  	border: 1px solid #b4b4b4;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	color: #333;
+  	margin: 5px 0px 25px 0px;
+    font-family: arial;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+  input[type=submit]:hover{
+  	background-color: darkgreen;
+  }
+
+
+  @media screen and (max-width: 550px){
+
+  .col-25{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-75{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="frm">
+
+	<form>
+    <div class="row">
+  		<div class="col-25"><label>First Name</label></div>
+  		<div class="col-75"><input type="text" name="First Name" placeholder="Your Name"></div>
+    </div>
+
+    <div class="row">
+  		<div class="col-25"><label>Last Name</label></div>
+  		<div class="col-75"><input type="text" name="Last Name" placeholder="Your Last Name"></div>
+    </div>
+
+    <div class="row">
+  		<div class="col-25"><label>Country</label></div>
+  		<div class="col-75">
+        <select>
+    			<option>India</option>
+    			<option>Austria</option>
+    			<option>US</option>
+  		  </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25"><label>Subject</label></div>
+      <div class="col-75">
+        <textarea name="Subject" placeholder="Write Something" rows="6"></textarea>
+      </div>
+    </div>
+
+		<input type="submit" name="Submit">
+	</form>
+
+
+</div>
+
+
+</body>
+</html>
