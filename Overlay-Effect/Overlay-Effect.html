@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Overlay Effect</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+    body, html{
+        margin: 0px;
+        padding: 30px;
+        font-family: arial;
+    }
+
+  .overlay {
+    background-color: #000;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+  }
+
+	</style>
+	
+</head>
+<body>
+
+    <div class="overlay" onclick="hide()" id="show-overlay"></div>
+
+    <div>
+        <h1>Overlay</h1>
+        <p>Add an overlay effect to the page content (100% width and height with a black background color with 50% opacity).</p>
+        <button onclick="show()">Turn On The Overlay Effect</button>
+    </div>
+
+<script type="text/javascript">
+    
+    function show(){
+        document.getElementById('show-overlay').style="display:block"
+    }
+
+    function hide(){
+        document.getElementById('show-overlay').style="display:none"
+    }
+</script>
+
+</body>
+</html>
