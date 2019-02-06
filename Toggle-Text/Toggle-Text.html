@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Toggle Text</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <style type="text/css">
+
+body, html {
+  margin:0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+
+
+	</style>
+	
+</head>
+<body>
+
+  <button onclick="myFunction()">Click Me</button>
+
+  <div id="myDIV">Hello</div>
+
+  <script type="text/javascript">
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.innerHTML === "Hello") {
+        x.innerHTML = "Swapped text!";
+      } else {
+        x.innerHTML = "Hello";
+      }
+    }
+    
+  </script>
+
+</body>
+</html>
