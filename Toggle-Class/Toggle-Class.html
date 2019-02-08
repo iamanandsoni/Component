@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Toggle Class</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <style type="text/css">
+
+body, html {
+  margin:0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mystyle{
+  background-color: coral;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+	</style>
+	
+</head>
+<body>
+
+  <button onclick="myFunction()">Toggle Class</button>
+
+  <div id="myDIV">Click the button to toggle class name!</div>
+
+  <script type="text/javascript">
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      x.classList.toggle("mystyle");
+    }
+    
+  </script>
+
+</body>
+</html>
