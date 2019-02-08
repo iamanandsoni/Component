@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Toggle Like Dislike</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <style type="text/css">
+
+body, html {
+  margin:0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
+
+	</style>
+	
+</head>
+<body>
+
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+  <script type="text/javascript">
+
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
+    
+  </script>
+
+</body>
+</html>
