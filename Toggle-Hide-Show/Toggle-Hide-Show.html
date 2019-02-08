@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Toggle Hide Show</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <style type="text/css">
+
+body, html {
+  margin:0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+
+
+	</style>
+	
+</head>
+<body>
+
+  <button onclick="myFunction()">Toggle Hide and Show</button>
+
+  <div id="myDIV">This is my DIV element.</div>
+
+  <script type="text/javascript">
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    
+  </script>
+
+</body>
+</html>
